@@ -1,0 +1,32 @@
+<h1>Crear carta</h1>
+
+<form action="/crear-carta" method="POST">
+    <label>Título:</label>
+    <input type="text" name="titulo" required>
+
+    <label>Contenido:</label>
+    <textarea name="contenido" rows="6" required></textarea>
+
+    <button type="submit">Guardar carta</button>
+</form>
+
+<hr>
+
+<h2>Tus cartas guardadas</h2>
+
+{{#if cartas.length}}
+    {{#each cartas}}
+        <div class="carta">
+            <h3>{{this.titulo}}</h3>
+            <p>{{this.contenido}}</p>
+
+            <form action="/convertir-a-png" method="POST">
+                <input type="hidden" name="id" value="{{this.id}}">
+                <button type="submit">Convertir a PNG</button>
+            </form>
+        </div>
+        <hr>
+    {{/each}}
+{{else}}
+    <p>No hay cartas todavía.</p>
+{{/if}}

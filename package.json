@@ -21,9 +21,14 @@
   "keywords": [],
   "license": "ISC",
   "dependencies": {
+    "cloudinary": "^2.8.0",
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
-    "express-handlebars": "^8.0.3"
+    "express-handlebars": "^8.0.3",
+    "lowdb": "^7.0.1",
+    "mongodb": "^7.0.0",
+    "multer": "^2.0.2",
+    "node-json-db": "^2.4.2"
   },
   "description": "",
   "main": "eslint.config.js",

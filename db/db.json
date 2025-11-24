@@ -1,10 +1,4 @@
 {
-  "carta": [
-    {
-      "id": "",
-      "title": "",
-      "imageUrl": "",
-      "createdAt": ""
-    }
-  ]
+  "users": [],
+  "cartas": []
 }
